@@ -1,0 +1,13 @@
+
+type Mutation{
+    saveBook(book: BookDTORequest): BookDTO
+    deleteBook(id: ID): BookDTO
+}
+
+input BookDTORequest{
+    title: String,
+    publisher: String,
+    datePublication: String,
+    price: Float,
+    resume: String
+}
